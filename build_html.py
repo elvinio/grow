@@ -57,6 +57,9 @@ def slugify(text):
     text = re.sub(r'[\s]+', '-', text.strip())
     return text
 
+# Map every relative file path → its section slug (derived from label in FILES)
+FILE_SLUG_MAP = {filename: slugify(label) for label, filename in FILES}
+
 # ── Parse headings from raw markdown ────────────────────────────────────────
 def extract_headings(md_text):
     """Return list of (level, text, anchor) from markdown headings."""
@@ -147,11 +150,16 @@ def md_to_html(md_text, section_slug):
 
     html = re.sub(r'href="#([^"]+)"', fix_href, html)
 
-    # 4. Fix cross-file relative links like href="./supplements.md" → href="#supplements-top"
+    # 4. Fix cross-file relative links like href="./foundations/how-learning-works.md"
+    #    → look up the real section slug from FILE_SLUG_MAP, fallback to basename slug
     def fix_file_link(m):
-        href = m.group(1)
-        fname = re.sub(r'^\./|\.md$', '', href)  # strip ./ and .md
-        return f'href="#{fname}-top"'
+        href = m.group(1)  # e.g. "foundations/how-learning-works.md"
+        slug = FILE_SLUG_MAP.get(href)
+        if slug:
+            return f'href="#{slug}-top"'
+        # Fallback: strip directory and .md, slugify the basename
+        basename = re.sub(r'.*/|\.md$', '', href)
+        return f'href="#{slugify(basename)}-top"'
 
     html = re.sub(r'href="\./([^"]+\.md)"', fix_file_link, html)
 
