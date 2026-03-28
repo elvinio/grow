@@ -11,11 +11,11 @@ The content is grounded in cognitive science and adapted for the realities of Si
 | Section | What it covers |
 |---|---|
 | [Foundations](./foundations/README.md) | How the brain learns, memory science, motivation, and evidence-based study strategies |
-| Learning by Age | *(coming soon)* Early childhood through adult learning — what works at each stage |
-| Subjects | *(coming soon)* Maths, English, Mother Tongue, Science — subject-specific guidance |
-| Teaching & Parenting | *(coming soon)* How to support a learner without taking over |
-| Motivation | *(coming soon)* Dealing with burnout, exam anxiety, and the "I hate school" phase |
-| Singapore Context | *(coming soon)* PSLE, DSA, IP, IB, SkillsFuture — navigating the local system |
+| [Learning by Age](./learning-by-age/README.md) | Primary school through JC/Poly/ITE and adult learning — what works at each stage |
+| [Subjects](./subjects/README.md) | Maths, Science, English, Chinese, Computer Science, Coding, and using AI |
+| [Teaching & Parenting](./teaching-and-parenting/README.md) | How to support a learner at every stage without taking over |
+| [Motivation](./motivation/staying-motivated.md) | Dealing with burnout, exam anxiety, and sustaining the drive to learn |
+| [Singapore Context](./singapore-context/sg-education-overview.md) | PSLE, O-levels, DSA, SkillsFuture — navigating the local system |
 
 ---
 
