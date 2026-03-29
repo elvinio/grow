@@ -46,6 +46,14 @@ FILES = [
     ("O-Level & N-Level", "singapore-context/o-level-n-level.md"),
     ("Enrichment & Tuition", "singapore-context/enrichment-and-tuition.md"),
     ("Local Resources", "singapore-context/local-resources.md"),
+    # Cooking
+    ("Cooking Fundamentals", "cooking/fundamentals.md"),
+    ("Heat & Equipment", "cooking/heat-and-equipment.md"),
+    ("Grains", "cooking/grains.md"),
+    ("Vegetables", "cooking/vegetables.md"),
+    ("Handling & Cooking Meat", "cooking/meat.md"),
+    ("Fermenting", "cooking/fermenting.md"),
+    ("Batch Cooking", "cooking/batch-cooking.md"),
 ]
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

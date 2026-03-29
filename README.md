@@ -16,6 +16,7 @@ The content is grounded in cognitive science and adapted for the realities of Si
 | [Teaching & Parenting](./teaching-and-parenting/parenting-philosophy.md) | How to support a learner at every stage without taking over |
 | [Motivation](./motivation/staying-motivated.md) | Dealing with burnout, exam anxiety, and sustaining the drive to learn |
 | [Singapore Context](./singapore-context/sg-education-overview.md) | PSLE, O-levels, DSA, SkillsFuture — navigating the local system |
+| [Cooking](./cooking/fundamentals.md) | Heat, salt, fat, acid, grains, vegetables, meat, fermentation, and batch cooking for the home kitchen |
 
 ---
 
